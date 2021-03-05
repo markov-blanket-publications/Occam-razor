@@ -56,18 +56,15 @@
 \maketitle
 
 \begin{abstract}
-An algorithmic Occam's razor may be derived using the Expected Kolmogorov Complexity
-of a discrete random variable. Unlike mainstream Algorithmic Information Theory we won't appeal to dubious mathematical
-notions such as the 'Universal Distribution' which actually lead to an incorrect answer. Instead, we shall rely upon a combination of Bayesian and ergodic perspectives that are both necessary and sufficient.
+An algorithmic Occam's razor may be derived using the Expected Kolmogorov Complexity of a discrete random variable. This derivation is based upon a combination of Bayesian and ergodic perspectives that are both necessary and sufficient in the context of the scientific method as it is applied in the natural sciences. 
 \end{abstract}
 
 
 \section{A Bayesian perspective on computation}
 
-Given that computations are observer-dependent, computation is fundamentally Bayesian. In particular, randomness is
-perceived as the uncertainty associated with a discrete random variable is defined with respect to a predictive model.
+As computations are observer-dependent, computation is fundamentally Bayesian. In particular, the uncertainty associated with a discrete random variable is defined with respect to a predictive model.
 It follows that Occam's razor for a discrete random variable $X$ is a measure of epistemic uncertainty or the memory
-requirements of the ideal machine learning model for predicting the behaviour of $X$.
+requirements of the ideal model for predicting the behaviour of $X$.
 
 In this setting, the minimum description length of $X$ is given by the most parsimonious model $\Omega$ for
 predicting the behaviour of $X$:
@@ -77,16 +74,16 @@ predicting the behaviour of $X$:
 \end{equation}
 
 where $H(\Omega)$ is the complexity of the model $\Omega$ and $H(X \lvert \Omega)$ is the expected information
-gained by $\Omega$ from observing $X$.
+gained by $\Omega$ from observing $X$. 
+
+The reason why the expression in (1) has a probabilistic representation is that the behaviour of a discrete random variable
+is described by its probability distribution. From an ergodic perspective, these
+probabilities also have a natural frequentist interpretation. 
 
 \section{An ergodic analysis}
 
-The reason why the expression in (1) has a probabilistic representation is that the behaviour of a discrete random variable
-is described by its probability distribution. Moreover, from an ergodic perspective we may also show that a probabilistic
-representation is sufficient.
-
 Given that an event that occurs with frequency $p$ generally requires modelling a sequence of length $\sim \frac{1}{p}$,
-in order to encode the structure of such an event, the machine would generally need a number of bits proportional to:
+in order to encode the structure of such an event, a machine would generally need a number of bits proportional to:
 
 \begin{equation}
 \ln(\frac{1}{p}) = - \ln(p)
