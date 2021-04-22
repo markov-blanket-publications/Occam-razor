@@ -99,10 +99,23 @@ the data-generating process is ergodic, an optimal encoding would use the expect
 in order to encode an event that occurs with frequency $p$.
 
 Regarding the assumptions, I may make a couple remarks. First, the ergodic assumption is equivalent to the premise that
-scientific experiments are repeatable in the natural sciences. As for finite memory, all Turing machines have finite
+scientific experiments are repeatable in the natural sciences. Second, all Turing machines have finite
 memory.
 
 \newpage 
+
+\section{Application: Ockham's razor and asymptotic incompressibility}
+
+Given a binary sequence $X_N = \{x_i\}_{i=1}^N$, we say that $X_N$ is \textit{asymptotically incompressible} if given the subsequence $X_k$ and $N >>k$ 
+on average we would not profit by gambling on the $N-k$ terms in $X_N$ based 
+on the partial knowledge provided by $X_k$. If $X_N$ satisfies these assumptions then Ockham's razor applied to $X_N$ scales as follows: 
+
+\begin{equation}
+\mathbb{E}[K(X_N)] \sim N	
+\end{equation}
+
+which means that an effective betting strategy has infinite sample complexity and therefore the average size(in bits) of the smallest approximately correct predictive model, found using machine learning methods, scales with 
+$N$. 
 
 \section{Discussion}
 
@@ -132,6 +145,9 @@ So information that is truly incompressible is self-referential.
 
 [2] Tom Everitt, Tor Lattimore, Marcus Hutter. Free Lunch for Optimisation under the Universal Distribution. 2016.
 
+[3] Schnorr, C. P. (1971). "A unified approach to the definition of a random sequence". Mathematical Systems Theory.
+
+[4] Shai Shalev-Shwartz and Shai Ben-David. Understanding Machine Learning: From Theory to Algorithms. Cambridge University Press. 2014. 
 
 \end{document}
 
