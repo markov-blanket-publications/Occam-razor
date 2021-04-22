@@ -104,18 +104,17 @@ memory.
 
 \newpage 
 
-\section{Application: Ockham's razor and asymptotic incompressibility}
+\section{Application: Ockcam's razor and asymptotic incompressibility}
 
 Given a binary sequence $X_N = \{x_i\}_{i=1}^N$, we say that $X_N$ is \textit{asymptotically incompressible} if given the subsequence $X_k$ and $N >>k$ 
 on average we would not profit by gambling on the $N-k$ terms in $X_N$ based 
-on the partial knowledge provided by $X_k$. If $X_N$ satisfies these assumptions then Ockham's razor applied to $X_N$ scales as follows: 
+on the partial knowledge provided by $X_k$. If $X_N$ satisfies these assumptions then Occam's razor applied to $X_N$ scales as follows: 
 
 \begin{equation}
 \mathbb{E}[K(X_N)] \sim N	
 \end{equation}
 
-which means that an effective betting strategy has infinite sample complexity and therefore the average size(in bits) of the smallest approximately correct predictive model, found using machine learning methods, scales with 
-$N$. 
+which means that the average size(in bits) of the smallest approximately correct predictive model, found using machine learning methods, scales with $N$. It follows that an effective betting strategy has infinite sample complexity and therefore such a strategy is not learnable.  
 
 \section{Discussion}
 
@@ -136,7 +135,6 @@ X = \Omega \implies \mathbb{E}[K(\Omega)] = H(\Omega)
 \end{equation}
 
 So information that is truly incompressible is self-referential.
-
 
 \section*{References}
 
