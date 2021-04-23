@@ -56,14 +56,14 @@
 \maketitle
 
 \begin{abstract}
-An algorithmic Occam's razor may be derived using the Expected Kolmogorov Complexity of a discrete random variable. This derivation is based upon a combination of Bayesian and ergodic perspectives that are both necessary and sufficient in the context of the scientific method as it is applied in the natural sciences. 
+An algorithmic Occam's razor may be derived using the Expected Kolmogorov Complexity of a discrete ergodic variable. This derivation is based upon a combination of Bayesian and ergodic perspectives that are both necessary and sufficient in the context of the scientific method as it is applied in the natural sciences. 
 \end{abstract}
 
 
 \section{A Bayesian perspective on computation}
 
-As computations are observer-dependent, computation is fundamentally Bayesian. In particular, the uncertainty associated with a discrete random variable is defined with respect to a predictive model.
-It follows that Occam's razor for a discrete random variable $X$ is a measure of epistemic uncertainty or the memory
+As computations are observer-dependent, computation is fundamentally Bayesian. In particular, the uncertainty associated with a discrete ergodic variable is defined with respect to a predictive model.
+It follows that Occam's razor for a discrete ergodic variable $X$ is a measure of epistemic uncertainty or the memory
 requirements of the ideal model for predicting the behaviour of $X$.
 
 In this setting, the minimum description length of $X$ is given by the most parsimonious model $\Omega$ for
@@ -76,7 +76,7 @@ predicting the behaviour of $X$:
 where $H(\Omega)$ is the complexity of the model $\Omega$ and $H(X \lvert \Omega)$ is the expected information
 gained by $\Omega$ from observing $X$. 
 
-The reason why the expression in (1) has a probabilistic representation is that the behaviour of a discrete random variable
+The reason why the expression in (1) has a probabilistic representation is that the behaviour of a discrete ergodic variable
 is described by its probability distribution. From an ergodic perspective, these
 probabilities also have a natural frequentist interpretation. 
 
@@ -119,7 +119,7 @@ which means that the average size(in bits) of the smallest approximately correct
 \section{Discussion}
 
 I would like to point out that mainstream Algorithmic Information Theory insists that the Expected Kolmogorov Complexity
-of a discrete random variable equals its Shannon entropy:
+of a discrete ergodic variable equals its Shannon entropy:
 
 \begin{equation}
 \mathbb{E}[K(X)] = H(X)
